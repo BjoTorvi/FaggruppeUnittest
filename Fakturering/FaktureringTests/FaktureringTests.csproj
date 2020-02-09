@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\Fakturaer1.json" />
+    <None Remove="TestData\Kunde1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\Fakturaer1.json" />
+    <Content Include="TestData\Kunde1.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FaktureringAPI\FaktureringAPI.csproj" />
+  </ItemGroup>
+
+</Project>
