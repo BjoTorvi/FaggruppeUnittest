@@ -5,13 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="TestData\Fakturaer1.json" />
-    <None Remove="TestData\Kunde1.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="TestData\Fakturaer1.json" />
-    <Content Include="TestData\Kunde1.json" />
+    <Compile Remove="TestData\**" />
+    <EmbeddedResource Remove="TestData\**" />
+    <None Remove="TestData\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -6,7 +6,7 @@ namespace FaktureringAPI.DataLayer
 {
     internal class DataReader
     {
-        private readonly string _basePath= "..//..//..//TestData//";
+        private readonly string _basePath= "..//..//..//..//..//Data//";
 
         public DataReader()
         {

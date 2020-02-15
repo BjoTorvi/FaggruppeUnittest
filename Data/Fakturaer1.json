@@ -1,9 +1,11 @@
 ﻿[
   {
+    "Beskrivelse": "Takarbeider",
     "type": "kreditt",
     "belop": 100
   },
   {
+    "Beskrivelse": "RØRARBEIDER KJØKKEN OG BAD",
     "type": "kreditt",
     "belop": 200
   }
