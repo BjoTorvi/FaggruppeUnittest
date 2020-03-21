@@ -4,17 +4,18 @@ using FaktureringAPI.Entities;
 
 namespace FaktureringAPI.Utils
 {
-    public static class FakturaUtils
+    public class FakturaUtil : IFakturaUtil
     {
-        public static void MakeDescriptionsLowercase(IList<Faktura> fakturaer)
+        public IList<Faktura> MakeDescriptionsLowercase(IList<Faktura> fakturaer)
         {
             foreach (var faktura in fakturaer)
             {
-                faktura.Beskrivelse = 
-                    faktura.Beskrivelse.Substring(0,1)
+                faktura.Beskrivelse =
+                    faktura.Beskrivelse.Substring(0, 1)
                     + faktura.Beskrivelse.Substring(1).ToLower();
-
             }
+
+            return fakturaer;
         }
     }
 }

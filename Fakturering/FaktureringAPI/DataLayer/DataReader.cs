@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 
 namespace FaktureringAPI.DataLayer
 {
-    internal class DataReader
+    internal class DataReader : IDataReader
     {
-        private readonly string _basePath= "..//..//..//..//..//Data//";
+        private readonly string _basePath = "..//..//..//..//..//Data//";
 
         public DataReader()
         {

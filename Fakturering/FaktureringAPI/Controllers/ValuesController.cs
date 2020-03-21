@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using FaktureringAPI.Entities;
 using FaktureringAPI.ServiceLayer;
+using FaktureringAPI.Utils;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FaktureringAPI.Controllers
@@ -16,7 +14,7 @@ namespace FaktureringAPI.Controllers
         [HttpGet("{id}")]
         public async Task<Kunde> GetAsync(int id)
         {
-            var service = new Service();
+            var service = new Service( new DataLayer.DataReader(),new FakturaUtil());
 
             return await service.GetKunde(id);
         }
